@@ -6,13 +6,406 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Progressive landing page</title>
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/main_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="container">
+        <!--navigation menu - start-->
+        <div id="nav_menu" class="nav_menu">
+            <div id="nav_menu_logo" class="nav_menu_logo">
+                <button id="mob_trigger"></button>
+            </div>
+            <div id="nav_menu_link" class="nav_menu_link">
+                <ul>
+                    <li>
+                        <a href="#block_tree">ABOUT</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#block_four">GALLERY</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#block_five">PRICING</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#block_six">FAQ</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#block_seven">BENEFITS</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="nav_menu_button" class="nav_menu_button">
+                <button id="sign_in" class="dark-button">SIGN IN</button>
+                <button id="sign_up" class="orange-button">SIGN UP</button>
+            </div>
+            <div class="nav_menu_close">
+                <button class="far fa-times-circle" id="nav_menu_close"></button>
+            </div>
+        </div>
+        <!--navigation menu - finish-->
 
+        <!--pop up sign in - start-->
+        <div id="sign_in_form" class="popup">
+            <div class="popup_body">
+                <p class="popup_header">Please enter your login information</p>
+                <button class="far fa-times-circle close-popup" alt=""></button>
+                <form action="">
+                    <input placeholder="Login" type="text">
+                    <input placeholder="Phone number" type="tel">
+                    <input placeholder="Password" type="password">
+                    <button class="orange-button" type="submit">log in</button>
+                </form>
+            </div>
+        </div>
+        <!--pop up sign in - finish-->
+
+        <!--pop up sign in - start-->
+        <div id="sign_up_form" class="popup">
+            <div class="popup_body">
+                <p class="popup_header">
+                    Please enter your registration information</p>
+                <button class="far fa-times-circle close-popup" alt=""></button>
+                <form action="">
+                    <input placeholder="Phone number" type="tel">
+                    <input placeholder="Password" type="password">
+                    <button class="orange-button" type="submit">sign up</button>
+                </form>
+            </div>
+        </div>
+        <!--pop up sign in - finish-->
+
+        <!--block#1 - start-->
+        <div class="block_one">
+            <div class="block_one_first">
+                <h1 id="block_one_head">Many reasons to get up and start to get back in the business</h1>
+                <p id="block_one_title">The harder you work for something, the greater you’ll feel when you achieve it.
+                </p>
+                <button class="orange-button block_one_button">Learn More</button>
+                <button id="demo_button" class="dark-button block_one_button">DEMO</button>
+                <div class="block_one_preview">
+                    <button id="play_button" class="fas fa-play-circle"></button>
+                    <p id="title_one">The harder you work for something, the greater you’ll feel when you achieve it.
+                        <a href="#" id="title_two">Watch preview</a>
+                    </p>
+                </div>
+            </div>
+            <div class="block_one_second">
+                <img src="pictures/svg/human.svg" alt="">
+            </div>
+        </div>
+        <!--block#1 - finish-->
+
+        <!--block#2 - start-->
+        <div class="block_two">
+            <img src="pictures/svg/brand/profit.svg" alt="">
+            <img src="pictures/svg/brand/appercues.svg" alt="">
+            <img src="pictures/svg/brand/ship.svg" alt="">
+            <img src="pictures/svg/brand/bench.svg" alt="">
+            <img src="pictures/svg/brand/subbly.svg" alt="">
+            <img src="pictures/svg/brand/demio.svg" alt="">
+            <a name="block_tree"></a>
+        </div>
+        <!--block#2 - finish-->
+
+        <!--block#3 - start-->
+
+        <div class="block_tree">
+            <div class="block_tree_header">
+                <h2>Your choice</h2>
+                <p>There are many reasons to get down and start to get depressed about your situation. </p>
+                <img id="rain1" src="pictures/svg/side_rain/rain.svg" alt="">
+                <img id="rain2" src="pictures/svg/side_rain/rain.svg" alt="">
+                <img id="move_rain1" src="pictures/svg/side_rain/move_rain.svg" alt="">
+                <img id="move_rain2" src="pictures/svg/side_rain/move_rain.svg" alt="">
+            </div>
+            <div class="block_tree_advantages">
+                <div class="block_tree_advantages_col">
+                    <div>
+                        <img src="pictures/svg/icon/flip.svg">
+                    </div>
+                    <div>
+                        <p class="block_tree_advantages_header">Ecstatic elegance</p>
+                        <p class="block_tree_advantages_title">Article nor prepare chicken you him now. Shy merits say
+                            advice ten
+                            before
+                            lovers innate add.</p>
+                    </div>
+                </div>
+                <div class="block_tree_advantages_col">
+                    <div>
+                        <img src="pictures/svg/icon/airpods.svg">
+                    </div>
+                    <div>
+                        <p class="block_tree_advantages_header">Folly words widow</p>
+                        <p class="block_tree_advantages_title">Effect if in up no depend seemed. Ecstatic elegance gay
+                            but
+                            disposed. We
+                            me
+                            rent been part what.</p>
+                    </div>
+                </div>
+                <div class="block_tree_advantages_col">
+                    <div>
+                        <img src="pictures/svg/icon/lte.svg">
+                    </div>
+                    <div>
+                        <p class="block_tree_advantages_header">Possible procured trifling</p>
+                        <p class="block_tree_advantages_title">We me rent been part what. An concluded sportsman
+                            offending
+                            so provision
+                            mr
+                            education.</p>
+                    </div>
+                </div>
+                <div class="block_tree_advantages_col">
+                    <div>
+                        <img src="pictures/svg/icon/thunder.svg">
+                    </div>
+                    <div>
+                        <p class="block_tree_advantages_header">Open game</p>
+                        <p class="block_tree_advantages_title">Shy merits say advice ten before lovers innate add. She
+                            cordially
+                            behaviour
+                            can attempted estimable.</p>
+                    </div>
+                </div>
+                <div class="block_tree_advantages_col">
+                    <div>
+                        <img src="pictures/svg/icon/attachment.svg">
+                    </div>
+                    <div>
+                        <p class="block_tree_advantages_header">Endeavor</p>
+                        <p class="block_tree_advantages_title">Improve ashamed married expense bed her comfort pursuit
+                            mrs.
+                            Four time
+                            took
+                            ye your as fail lady.</p>
+                    </div>
+                </div>
+                <div class="block_tree_advantages_col">
+                    <div>
+                        <img src="pictures/svg/icon/bulb.svg">
+                    </div>
+                    <div>
+                        <p class="block_tree_advantages_header">Comfort pursuit</p>
+                        <p class="block_tree_advantages_title">Had denoting properly jointure you occasion directly
+                            raillery. In said
+                            to of
+                            poor full be post face
+                            snug.</p>
+                    </div>
+                </div>
+            </div>
+            <a name="block_four"></a>
+        </div>
+        <!--block#3 - finish-->
+
+        <!--block#4 - start-->
+
+        <div class="block_four">
+            <div class="block_four_left">
+                <div class="block_four_left_header">
+                    <h3>Increase your business <span class="another_color_word">traffic</span></h3>
+                </div>
+                <p>We are committed to processing the information in order to contact you and talk about your project.
+                </p>
+                <div class="block_four_left_button">
+                    <button class="orange-button">learn more</button>
+                </div>
+            </div>
+            <div class="block_four_right">
+                <img id="b_f_r_1" src="pictures/svg/graph.svg" alt="">
+                <img id="b_f_r_2" src="pictures/png/rectangle.png" alt="">
+                <img id="b_f_r_3" src="pictures/svg/arrow.svg" alt="">
+                <img id="b_f_r_4" src="pictures/svg/dot.svg" alt="">
+            </div>
+            <a name="block_five"></a>
+        </div>
+        <!--block#4 - finish-->
+
+        <!--block#5 - start-->
+        <div class="block_five">
+            <div>
+                <h4 class="block_five_header">3 Simple Ways To <span class="another_color_word">Save</span> A Bunch
+                    Of <span class="another_color_word">Money</span> When Buying A New Computer</h4>
+                <p class="block_five_title">Fully customizable and neatly organized components<br>
+                    will help you work faster without limiting creative freedom.</p>
+                <img id="rain3" src="pictures/svg/side_rain/rain.svg" alt="">
+                <img id="move_rain3" src="pictures/svg/side_rain/move_rain.svg" alt="">
+
+            </div>
+            <div class="block_five_col">
+                <div>
+                    <p class="block_five_header block_five_col_header">100+</p>
+                    <p class="block_five_title">5 Reasons To Purchase
+                        Desktop Computers</p>
+                </div>
+                <div>
+                    <p class="block_five_header block_five_col_header">43,000+</p>
+                    <p class="block_five_title">3 Simple Ways To Save A Bunch Of Money When Buying A New Computer</p>
+                </div>
+                <div>
+                    <p class="block_five_header block_five_col_header">30+</p>
+                    <p class="block_five_title">A Discount Toner Cartridge
+                        Is Better Than Ever And You
+                        Will Save 50 Or More</p>
+                </div>
+            </div>
+            <a name="block_six"></a>
+        </div>
+        <!--block#5- finish-->
+
+        <!--block#6- start-->
+        <div class="block_six">
+            <h5>Create your <span class="another_color_word">next project</span> with startup framework</h5>
+            <button class="orange-button">GET STARTED</button>
+            <div class="block_six_stadion">
+                <img id="stadion_svg" src="pictures/svg/stadion.svg" alt="">
+                <img id="stadion_line_1" class="stadion_line" src="pictures/svg/stadion_lines/one.svg" alt="">
+                <img id="stadion_line_2" class="stadion_line" src="pictures/svg/stadion_lines/two.svg" alt="">
+                <img id="stadion_line_3" class="stadion_line" src="pictures/svg/stadion_lines/tree.svg" alt="">
+                <img id="stadion_line_4" class="stadion_line" src="pictures/svg/stadion_lines/four.svg" alt="">
+            </div>
+            <a name="block_seven"></a>
+        </div>
+        <!--block#6- finish-->
+
+        <!--block#7- start-->
+        <div class="block_seven">
+            <div class="block_seven_left">
+                <h5>Invest property for better <span class="another_color_word">business</span></h5>
+                <p class="title">We are committed to processing the information in order to contact you and talk about
+                    your project. We are committed to processing the information.</p>
+                <button class="orange-button">learn more</button>
+            </div>
+            <div class="block_seven_right">
+                <img id="cart_detail_1" src="pictures/svg/cart.svg" alt="">
+                <img id="cart_detail_2" src="pictures/svg/strelka.svg" alt="">
+                <img id="cart_detail_3" src="pictures/svg/skidka.svg" alt="">
+                <img id="cart_detail_4" src="pictures/svg/world.svg" alt="">
+            </div>
+        </div>
+        <!--block#7- finish-->
+
+        <!--block#8- start-->
+        <div class="block_eight">
+            <img id="rain4" src="pictures/svg/side_rain/rain.svg" alt="">
+            <div class="block_eight_left">
+                <img id="meeting_detail_1" src="pictures/svg/rectangle3.svg" alt="">
+                <img id="meeting_detail_2" src="pictures/svg/dot2.svg" alt="">
+                <img id="meeting_detail_3" src="pictures/svg/dot3.svg" alt="">
+                <img id="meeting_detail_4" src="pictures/png/meeting.png" alt="">
+            </div>
+            <div class="block_eight_right">
+                <div class="block_eight_right_header">
+                    <h6>Help Finding Information Online</h6>
+                    <p>Fully customizable and neatly organized components
+                        will help you work faster without limiting creative freedom.</p>
+                </div>
+                <div class="block_eight_right_col">
+                    <div id="left">
+                        <img src="pictures/svg/icon/knife.svg" alt="">
+                        <p class="block_eight_right_col_head">Feature One</p>
+                        <p class="block_eight_right_col_title">Fully customizable and neatly organized components will
+                            help you work faster </p>
+                    </div>
+                    <div id="right">
+                        <img src="pictures/svg/icon/lte.svg" alt="">
+                        <p class="block_eight_right_col_head">Feature Two</p>
+                        <p class="block_eight_right_col_title">Fully customizable and neatly organized components will
+                            help you work faster </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--block#8- finish-->
+
+        <!--block#9- start-->
+        <div class="block_nine">
+            <div class="block_nine_background">
+                <img src="pictures/svg/ten_background.svg" alt="">
+            </div>
+            <div class="block_nine_body">
+                <p id="b_nine_head">There are many reasons to get down</p>
+                <p id="b_nine_title">There are many reasons to get down and start to get depressed about your situation.
+                </p>
+                <input placeholder="Your Email" type="text">
+                <button class="orange-button">send</button>
+                <p id="b_nine_subtitle">No spam. Only releases, updates and discounts</p>
+            </div>
+        </div>
+        <!--block#9- finish-->
+
+        <!--block#10- start-->
+        <div class="block_ten">
+            <img id="ten_background" src="pictures/svg/footer-background.svg" alt="">
+            <img id="red_dot_1" class="block_ten_dot" src="pictures/svg/red_dot.svg" alt="">
+            <img id="red_dot_2" class="block_ten_dot" src="pictures/svg/red_dot.svg" alt="">
+            <img id="red_dot_3" class="block_ten_dot" src="pictures/svg/red_dot.svg" alt="">
+            <img id="red_dot_4" class="block_ten_dot" src="pictures/svg/red_dot.svg" alt="">
+            <img id="red_dot_5" class="block_ten_dot" src="pictures/svg/red_dot.svg" alt="">
+            <img id="yellow_dot_1" class="block_ten_dot" src="pictures/svg/yelow_dot.svg" alt="">
+            <img id="yellow_dot_2" class="block_ten_dot" src="pictures/svg/yelow_dot.svg" alt="">
+            <div class="block_ten_header">
+                <p>ARShakir</p>
+                <div class="block_ten_header_social-bar">
+                    <button class="fab fa-google"></button>
+                    <button class="fab fa-twitter"></button>
+                    <button class="fab fa-facebook-f"></button>
+                </div>
+            </div>
+            <div class="block_ten_url_row">
+                <div class="block_ten_url_col">
+                    <p>First</p>
+                    <a href="">First page</a>
+                    <a href="">Second page</a>
+                    <a href="">Third page</a>
+                    <a href="">Fourth page</a>
+                </div>
+                <div class="block_ten_url_col">
+                    <p>Second</p>
+                    <a href="">First page</a>
+                    <a href="">Second page</a>
+                    <a href="">Third page</a>
+                    <a href="">Fourth page</a>
+                </div>
+                <div class="block_ten_url_col">
+                    <p>Third</p>
+                    <a href="">First page</a>
+                    <a href="">Second page</a>
+                    <a href="">Third page</a>
+                    <a href="">Fourth page</a>
+                </div>
+                <div class="block_ten_url_col">
+                    <p>Fourth</p>
+                    <a href="">First page</a>
+                    <a href="">Second page</a>
+                    <a href="">Third page</a>
+                    <a href="">Fourth page</a>
+                </div>
+            </div>
+            <div class="block_ten_footer">
+                <p>© Copyrights 2021</p>
+                <a href="">Privacy policy</a>
+                <a href="">Terms of service</a>
+            </div>
+        </div>
+        <!--block#10- finish-->
+    </div>
     <script src="js/jquery.js"></script>
+    <script src="js/jquery.appear.js"></script>
     <script src="js/script.js"></script>
 </body>
 
