@@ -73,3 +73,8 @@ $(document).ready(function () {
     });
     //pop up login in form finish
 });
+
+
+/*  Coded by Andrey Kiryanov on 05/19/2021
+    "https://github.com/AndreyK1ryanov/progressive-landing-page/"
+*/
