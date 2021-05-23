@@ -1274,6 +1274,7 @@ button {
   grid-template-rows: 1fr 2fr 1fr;
   position: relative;
   margin-bottom: 130px;
+  overflow: hidden;
 }
 .block_ten #ten_background {
   position: absolute;
