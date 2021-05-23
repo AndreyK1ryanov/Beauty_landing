@@ -39,6 +39,9 @@ h6 {
   h6 {
     font-size: 37px !important;
   }
+	body{
+		overflow-y: hidden;
+	}		
 }
 button {
   outline: none;
@@ -879,6 +882,18 @@ button {
   .block_six h5 {
     padding: 0px;
   }
+  		#stadion_line_1{
+		display:none;
+	}
+		#stadion_line_2{
+		display:none;
+	}
+		#stadion_line_3{
+		display:none;
+	}
+		#stadion_line_4{
+		display:none;
+	}
 }
 .block_seven {
   display: grid;
