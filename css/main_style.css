@@ -429,9 +429,6 @@ button {
     margin: 10px 0px;
   }
 }
-@media (max-width: 768px) {
-  margin-bottom: 120px;
-}
 .block_tree {
   margin-bottom: 130px;
   position: relative;
@@ -1737,8 +1734,6 @@ button {
   /* IE 9 Compatibility Mode */
   /* Chrome < 4, Legacy iOS */
 }
-
-/*
-Coded by Andrey Kiryanov on 05/19/2021
-"https://github.com/AndreyK1ryanov/progressive-landing-page/"
+/* 	 Coded by Andrey Kiryanov on 05/19/2021
+    "https://github.com/AndreyK1ryanov/progressive-landing-page/"
 */
