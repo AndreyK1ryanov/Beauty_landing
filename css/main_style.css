@@ -727,12 +727,8 @@ button {
   z-index: -1;
 }
 #move_rain3.appeared {
-  will-change: transform;
-  -webkit-transform: rotateZ(250deg) translate(700px, -640px);
-          transform: rotateZ(250deg) translate(700px, -640px);
-  opacity: 0.2;
-  -webkit-animation: rain_left 4s cubic-bezier(0, 0, 0.39, 0.99);
-          animation: rain_left 4s cubic-bezier(0, 0, 0.39, 0.99);
+  -webkit-animation: rain_left 4s cubic-bezier(0, 0, 0.39, 0.99) forwards;
+          animation: rain_left 4s cubic-bezier(0, 0, 0.39, 0.99) forwards;
 }
 @media (max-width: 1140px) {
   .block_five {
