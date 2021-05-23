@@ -39,6 +39,9 @@ h6 {
   h6 {
     font-size: 37px !important;
   }
+  body {
+    overflow-x: hidden;
+  }
 }
 button {
   outline: none;
