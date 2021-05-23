@@ -4,7 +4,7 @@
 }
 body {
   background: linear-gradient(260.26deg, #3b1d60 1.22%, #040d3e 106.28%);
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .container {
   max-width: 1100px;
@@ -38,6 +38,9 @@ h6 {
   h5,
   h6 {
     font-size: 37px !important;
+  }
+  .body {
+    overflow: ;
   }
 }
 button {
@@ -428,6 +431,9 @@ button {
   .block_two img {
     margin: 10px 0px;
   }
+}
+@media (max-width: 768px) {
+  margin-bottom: 120px;
 }
 .block_tree {
   margin-bottom: 130px;
@@ -875,6 +881,18 @@ button {
   }
   .block_six h5 {
     padding: 0px;
+  }
+  #stadion_line_1 {
+    display: none;
+  }
+  #stadion_line_2 {
+    display: none;
+  }
+  #stadion_line_3 {
+    display: none;
+  }
+  #stadion_line_4 {
+    display: none;
   }
 }
 .block_seven {
