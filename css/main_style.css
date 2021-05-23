@@ -41,6 +41,8 @@ h6 {
   }
   body {
     overflow-x: hidden;
+    padding: 5px;
+    margin: 5px;
   }
 }
 button {
