@@ -40,7 +40,7 @@ h6 {
     font-size: 37px !important;
   }
 	body{
-		overflow-y: hidden;
+		overflow-x: hidden;
 	}		
 }
 button {
