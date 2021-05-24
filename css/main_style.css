@@ -1199,7 +1199,7 @@ button {
 .block_nine_background img {
   position: absolute;
   top: -90px;
-  left: -10%;
+  left: -23%;
 }
 .block_nine_body {
   min-width: 100%;
@@ -1265,6 +1265,9 @@ button {
 @media (max-width: 1140px) {
   .block_nine {
     overflow: hidden;
+  }
+  .block_nine_background img {
+    left: -10%;
   }
   #b_nine_head {
     padding: 0px 80px;
