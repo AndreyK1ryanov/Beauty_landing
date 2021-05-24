@@ -1269,7 +1269,9 @@ button {
     overflow: hidden;
   }
   .block_nine_body {
-    background: #281F5B;
+    background-color: #281F5B;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
   }
   #b_nine_head {
     padding: 0px 80px;
