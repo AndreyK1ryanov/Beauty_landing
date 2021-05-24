@@ -887,7 +887,6 @@ button {
   .block_six {
     margin-bottom: 90px;
     grid-template-rows: 0.5fr 0.1fr 1fr;
-    overflow: hidden;
   }
   .block_six h5 {
     padding: 0px;
