@@ -40,7 +40,10 @@ h6 {
     font-size: 37px !important;
   }
   body {
-    overflow-x: hidden !important;
+    overflow-x: hidden;
+  }
+  .container {
+    padding: 0px 10px;
   }
 }
 button {
@@ -372,6 +375,7 @@ button {
 }
 @media (max-width: 1140px) {
   .block_one {
+    overflow: hidden;
     margin-top: 60px;
   }
   .block_one_first {
@@ -522,6 +526,9 @@ button {
           animation: rain_down 15s linear infinite;
 }
 @media (max-width: 1140px) {
+  .block_tree {
+    overflow: hidden;
+  }
   .block_tree_advantages_title {
     padding-right: 10px;
   }
@@ -651,6 +658,9 @@ button {
   transition: transform ease 800ms, -webkit-transform ease 800ms;
 }
 @media (max-width: 1140px) {
+  .block_four {
+    overflow: hidden;
+  }
   .block_four_left_header h3 {
     padding-right: 0px;
   }
@@ -870,10 +880,14 @@ button {
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
 }
+@media (max-width: 1140px) {
+  overflow: hidden;
+}
 @media (max-width: 768px) {
   .block_six {
     margin-bottom: 90px;
     grid-template-rows: 0.5fr 0.1fr 1fr;
+    overflow: hidden;
   }
   .block_six h5 {
     padding: 0px;
@@ -977,6 +991,9 @@ button {
   z-index: 1;
 }
 @media (max-width: 1140px) {
+  .block_seven {
+    overflow: hidden;
+  }
   #cart_detail_3 {
     display: none;
   }
@@ -1146,6 +1163,7 @@ button {
 @media (max-width: 1140px) {
   .block_eight {
     grid-template-columns: 1fr;
+    overflow: hidden;
   }
   .block_eight_left {
     display: none;
@@ -1246,6 +1264,9 @@ button {
   margin-bottom: 52px;
 }
 @media (max-width: 1140px) {
+  .block_nine {
+    overflow: hidden;
+  }
   #b_nine_head {
     padding: 0px 80px;
   }
