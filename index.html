@@ -15,72 +15,62 @@
 <body>
     <div class="container">
         <!--navigation menu - start-->
-        <div id="nav_menu" class="nav_menu">
-            <div id="nav_menu_logo" class="nav_menu_logo">
-                <button id="mob_trigger"></button>
+        <div class="nav-menu">
+            <a href="#" class="nav-menu__logo"></a>
+            <ul class="nav-menu__list-item">
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link" href="#block-tree">ABOUT</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link" href="#block-four">GALLERY</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link" href="#block-five">PRICING</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link" href="#block-six">FAQ</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link" href="#block-seven">BENEFITS</a>
+                </li>
+            </ul>
+            <div class="sign-button-block">
+                <button class="sign-button sign-button_in dark-button">SIGN IN</button>
+                <button class="sign-button sign-button_up orange-button">SIGN UP</button>
             </div>
-            <div id="nav_menu_link" class="nav_menu_link">
-                <ul>
-                    <li>
-                        <a href="#block_tree">ABOUT</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="#block_four">GALLERY</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="#block_five">PRICING</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="#block_six">FAQ</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="#block_seven">BENEFITS</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="nav_menu_button" class="nav_menu_button">
-                <button id="sign_in" class="dark-button">SIGN IN</button>
-                <button id="sign_up" class="orange-button">SIGN UP</button>
-            </div>
-            <div class="nav_menu_close">
-                <button class="far fa-times-circle" id="nav_menu_close"></button>
+            <div class="mobile-button-block">
+                <button class="mobile-button mobile-button-open fas fa-bars"></button>
+                <button class="mobile-button mobile-button-close far fa-times-circle"></button>
             </div>
         </div>
         <!--navigation menu - finish-->
 
         <!--pop up sign in - start-->
-        <div id="sign_in_form" class="popup">
-            <div class="popup_body">
-                <p class="popup_header">Please enter your login information</p>
-                <button class="far fa-times-circle close-popup" alt=""></button>
-                <form action="">
-                    <input placeholder="Login" type="text">
-                    <input placeholder="Phone number" type="tel">
-                    <input placeholder="Password" type="password">
-                    <button class="orange-button" type="submit">log in</button>
+        <div class="pop-up sign-in-form">
+            <div class="pop-up__body">
+                <p class="pop-up__header">Please enter your login information</p>
+                <button class="pop-up__close-button far fa-times-circle" alt=""></button>
+                <form class="identification-form" action="">
+                    <input class="identification-form__input" placeholder="Login" type="text">
+                    <input class="identification-form__input" placeholder="Phone number" type="tel">
+                    <input class="identification-form__input" placeholder="Password" type="password">
+                    <button class="identification-form__button orange-button" type="submit">log
+                        in</button>
                 </form>
             </div>
         </div>
         <!--pop up sign in - finish-->
 
         <!--pop up sign in - start-->
-        <div id="sign_up_form" class="popup">
-            <div class="popup_body">
-                <p class="popup_header">
-                    Please enter your registration information</p>
-                <button class="far fa-times-circle close-popup" alt=""></button>
-                <form action="">
-                    <input placeholder="Phone number" type="tel">
-                    <input placeholder="Password" type="password">
-                    <button class="orange-button" type="submit">sign up</button>
+        <div class="pop-up sign-up-form">
+            <div class="pop-up__body">
+                <p class="pop-up__header">Please enter your registration information</p>
+                <button class="pop-up__close-button far fa-times-circle" alt=""></button>
+                <form class="identification-form" action="">
+                    <input class="identification-form__input" placeholder="Login" type="text">
+                    <input class="identification-form__input" placeholder="Password" type="password">
+                    <button class="identification-form__button orange-button" type="submit">sign
+                        up</button>
                 </form>
             </div>
         </div>

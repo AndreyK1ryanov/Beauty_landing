@@ -1,24 +1,28 @@
 $(document).ready(function () {
     //mobile menu - start
-    $('#mob_trigger').on("tap click", function () {
-        $('#nav_menu').addClass('mob_nav_menu');
-        $('#nav_menu_link').addClass('mob_nav_menu_link');
-        $('#nav_menu_button').addClass('mob_nav_menu_button');
-        $('#nav_menu_close').addClass('mob_nav_menu_close');
-        $('.nav_menu_close').addClass('mob_nav_menu_close');
+    $('.mobile-button-open').on("tap click", function () {
+        $('.nav-menu').addClass('mobile-nav-menu');
+        $('.nav-menu__list-item').addClass('mobile-nav-menu__list-item');
+        $('.nav-menu__item').addClass('mobile-nav-menu__item');
+        $('.sign-button-block').addClass('mobile-sign-button-block');
+        $('.mobile-button-close').addClass('mobile-button-close_active');
+        $('.mobile-button-open').addClass('mobile-button-open_deactive')
     });
 
-    function close_mob_menu() {
-        $('#nav_menu').removeClass('mob_nav_menu');
-        $('#nav_menu_link').removeClass('mob_nav_menu_link');
-        $('#nav_menu_button').removeClass('mob_nav_menu_button');
-        $('#nav_menu_close').removeClass('mob_nav_menu_close');
-        $('.nav_menu_close').removeClass('mob_nav_menu_close');
+    function closeMobileMenu() {
+        $('.nav-menu').removeClass('mobile-nav-menu');
+        $('.nav-menu__list-item').removeClass('mobile-nav-menu__list-item');
+        $('.nav-menu__item').removeClass('mobile-nav-menu__item');
+        $('.sign-button-block').removeClass('mobile-sign-button-block');
+        $('.mobile-button-close').removeClass('mobile-button-close_active');
+        $('.mobile-button-open').removeClass('mobile-button-open_deactive')
     }
 
-    $('#nav_menu_close').on("tap click", close_mob_menu)
+    $('.mobile-button-close').on("tap click", closeMobileMenu)
 
-    $('#nav_menu_link').find('a').on("tab click", close_mob_menu)
+    $('.nav-menu__link').on("tab click", closeMobileMenu)
+
+
     //mobile meu - finish
 
     //atach class "appeared" for animation when user scroll -start
@@ -46,29 +50,29 @@ $(document).ready(function () {
     //atach class "appeared" for animation when user scroll -finish
 
     //pop up login in form start
-    $('#sign_in').click(function (e) {
+    $('.sign-button_in').click(function (e) {
         e.preventDefault();
-        $('#sign_in_form').fadeIn(800);
+        $('.sign-in-form').fadeIn(800);
         $('html').addClass('no-scroll');
-        close_mob_menu();
+        closeMobileMenu();
     });
 
-    $('.close-popup').click(function () {
-        $('#sign_in_form').fadeOut(800);
+    $('.pop-up__close-button').click(function () {
+        $('.sign-in-form').fadeOut(800);
         $('html').removeClass('no-scroll');
     });
     //pop up login in form finish
 
     //pop up login in form start
-    $('#sign_up').click(function (e) {
+    $('.sign-button_up').click(function (e) {
         e.preventDefault();
-        $('#sign_up_form').fadeIn(800);
+        $('.sign-up-form').fadeIn(800);
         $('html').addClass('no-scroll');
-        close_mob_menu();
+        closeMobileMenu();
     });
 
-    $('.close-popup').click(function () {
-        $('#sign_up_form').fadeOut(800);
+    $('.pop-up__close-button').click(function () {
+        $('.sign-up-form').fadeOut(800);
         $('html').removeClass('no-scroll');
     });
     //pop up login in form finish
