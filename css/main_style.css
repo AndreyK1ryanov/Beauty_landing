@@ -325,32 +325,35 @@ button {
   padding: 15px 40px;
   font-size: 14px;
 }
-.block_one {
+.promo {
   display: grid;
   grid-template-columns: 50% 50%;
   margin-top: 135px;
 }
-.block_one_button {
-  margin-right: 20px;
-  margin-top: 40px;
-  padding: 13px 31.93px;
+.promo__header {
+  font-size: 44px;
+  color: #99efd0;
 }
-.block_one_preview {
-  margin-top: 60px;
-  display: grid;
-  grid-template-columns: 35% 65%;
-}
-.block_one p {
+.promo__title {
   color: #8476aa;
   line-height: 22px;
   font-size: 19px;
   font-family: 'Gilroy-SemiBold';
+  padding-top: 19px;
+  padding-right: 20px;
 }
-.block_one h1 {
-  font-size: 44px;
-  color: #99efd0;
+.promo__button {
+  min-width: 164px;
+  margin-right: 20px;
+  margin-top: 40px;
+  padding: 13px 31.93px;
 }
-#play_button {
+.preview {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+.preview__play-button {
   text-align: center;
   font-size: 48px;
   background-color: #462579;
@@ -360,18 +363,19 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100px;
+  -webkit-transition-property: font-size;
+  transition-property: font-size;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
-#play_button:hover {
+.preview__play-button:hover {
   font-size: 45px;
 }
-#demo_button {
+.preview__open-button {
   padding: 13px 57.6px;
 }
-#block_one_title {
-  padding-top: 19px;
-  padding-right: 20px;
-}
-#title_one {
+.preview__title {
+  color: #8476aa;
   font-family: 'Rubik';
   display: grid;
   grid-template-columns: 100%;
@@ -381,58 +385,60 @@ button {
   font-size: 16px;
   line-height: 22px;
 }
-#title_two {
+.preview__open-button {
   font-family: 'Rubik';
   padding: 0px;
+  letter-spacing: 2px;
   font-size: 14px;
   color: #6D6D78;
+  -webkit-transition-property: font-size;
+  transition-property: font-size;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
-#title_two:hover {
+.preview__open-button:hover {
   color: #f2994a;
 }
 @media (max-width: 1140px) {
-  .block_one {
+  .promo {
     overflow: hidden;
     margin-top: 60px;
   }
-  .block_one_first {
+  .promo__left-side {
     padding-right: 20px;
   }
-  .block_one_preview {
-    margin: 40px 0px;
-  }
-  .block_one h1 {
+  .promo__header {
     font-size: 41px;
   }
-  .block_one p {
+  .promo__title {
     font-size: 18px;
   }
-  #demo_button {
-    margin-top: 20px;
+  .promo__button {
+    margin-top: 30px;
+  }
+  .preview {
+    margin: 40px 0px;
   }
 }
 @media (max-width: 768px) {
-  .block_one {
+  .promo {
     text-align: center;
     grid-template-columns: 1fr;
   }
-  .block_one_first {
+  .promo__left-side {
     padding-right: 0px;
   }
-  .block_one_button {
+  .promo__button {
     padding: 15px 10px;
     font-size: 10px;
   }
-  .block_one_second {
+  .promo__right-side {
     display: none;
   }
-  .block_one_preview {
+  .preview {
     grid-template-columns: 25% 75%;
   }
-  #demo_button {
-    padding: 15px 35px;
-  }
-  #title_one {
+  .preview__title {
     text-align: left;
   }
 }

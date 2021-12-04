@@ -327,115 +327,116 @@ button{
 //popup_in finish
 
 //block#1 start
-.block_one{
+.promo{
 		display: grid;
 		grid-template-columns: 50% 50%;
 		margin-top: 135px;
-	&_button{
-		margin-right: 20px;
-		margin-top: 40px;
-		padding: 13px 31.93px;
-	}
-	&_preview{
-		margin-top: 60px;
-		display: grid;
-		grid-template-columns: 35% 65%;
-	}
-	p{
-		color: @purple;
-		line-height: 22px;
-		font-size: 19px;
-		font-family: 'Gilroy-SemiBold';
-	}
-	h1{
-		font-size: 44px;
-		color: @blue;
-	}
+		&__header{
+			font-size: 44px;
+			color: @blue;
+		}
+		&__title{
+			color: @purple;
+			line-height: 22px;
+			font-size: 19px;
+			font-family: 'Gilroy-SemiBold';
+			padding-top: 19px;
+			padding-right: 20px;
+		}			
+		&__button{
+			min-width: 164px;
+			margin-right: 20px;
+			margin-top: 40px;
+			padding: 13px 31.93px;
+		}
 }
-#play_button{
-	text-align: center;
-	font-size: 48px;
-	background-color: #462579;
-	color: white;
-	border-width: 0px;
-    justify-content: center;
-	min-height: 100px;
-}
-#play_button:hover{
-	font-size: 45px;
-}
-#demo_button{
-	padding: 13px 57.6px;
-}
-#block_one_title{
-	padding-top: 19px;
-	padding-right: 20px;
-}
-#title_one{
-	font-family: 'Rubik';
+.preview{
+	margin-top: 60px;
 	display: grid;
-	grid-template-columns: 100%;
-	padding-left: 20px;
-	padding-top: 11px;
-	margin-bottom: 10px;
-	font-size: 16px;
- 	line-height: 22px;
-}
-#title_two{
-	font-family: 'Rubik';
-	padding: 0px;
-	font-size: 14px;
-	color: #6D6D78;
-}
-#title_two:hover{
-	color: @orange;
+	grid-template-columns: 35% 65%;
+	&__play-button{
+		text-align: center;
+		font-size: 48px;
+		background-color: #462579;
+		color: white;
+		border-width: 0px;
+		justify-content: center;
+		min-height: 100px;
+		transition-property: font-size;
+		transition-duration: 0.1s;
+	}
+	&__play-button:hover{
+		font-size: 45px;
+	}
+	&__open-button{
+		padding: 13px 57.6px;
+	}
+	&__title{
+		color: @purple;
+		font-family: 'Rubik';
+		display: grid;
+		grid-template-columns: 100%;
+		padding-left: 20px;
+		padding-top: 11px;
+		margin-bottom: 10px;
+		font-size: 16px;
+		line-height: 22px;
+	}
+	&__open-button{
+		font-family: 'Rubik';
+		padding: 0px;
+		letter-spacing: 2px;
+		font-size: 14px;
+		color: #6D6D78;
+		transition-property: font-size;
+		transition-duration: 0.1s;
+	}
+	&__open-button:hover{
+		color: @orange;
+	}
 }
 //adaptation start
 @media  (max-width: 1140px)  {
-	.block_one{
+	.promo{
 		overflow: hidden;
-		&_first{
+		&__left-side{
 			padding-right: 20px;
 		}
-		&_preview{
-			margin: 40px 0px;
-
-		}
 		margin-top: 60px;
-		h1{
+		&__header{
 			font-size: 41px;
 		}
-		p{
+		&__title{
 			font-size: 18px;
 		}
+		&__button{
+			margin-top: 30px;
+		}
 	}
-	#demo_button{
-		margin-top: 20px;
+	.preview{
+		margin: 40px 0px;
 	}
 }
 @media  (max-width: 768px)  {
-	.block_one{
+	.promo{
 		text-align: center;
 		grid-template-columns: 1fr;
-		&_first{
+		&__left-side{
 			padding-right: 0px;
 		}
-		&_button{
+		&__button{
 			padding: 15px 10px;
 			font-size: 10px;
 		}
-		&_second{
+		&__right-side{
 			display: none;
 		}
-		&_preview{
-			grid-template-columns: 25% 75%;
+	}
+	.preview{
+		grid-template-columns: 25% 75%;
+		&__title{
+			text-align: left;
 		}
-	}
-	#demo_button{
-		padding: 15px 35px
-	}
-	#title_one{
-		text-align: left;
 	}
 }
 //adaptation finish
