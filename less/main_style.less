@@ -21,7 +21,7 @@ body{
 	margin: 0px auto;
 	padding: 0px 20px;
 }
-.another_color_word{
+.another-color-word{
 	color: @orange;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -576,124 +576,111 @@ button{
 //block#3 finish
 
 //block#4 start
-.block_four{
+.traffic-boost-row{
 	justify-content: center;
 	align-items: center;
 	display: grid;
 	grid-template-columns: 43% 43%;
 	margin-bottom: 150px;
-	&_left{
+	&__text{
 		position: relative;
-		p{
-			margin-top: 32px;
-			font-family: Gilroy-SemiBold;
-			font-size: 15px;
-			line-height: 28px;
-			letter-spacing: 0.5px;
-			color: @purple;
-		}
-		&_header{
-			h3{
-				padding-right: 100px;
-				font-family: Inter;
-				font-weight: bold;
-				font-size: 42px;
-				line-height: 50px;
-				color: @blue;
-			}
-		}
-		button{
-			margin-top: 43px;
-			padding: 14px 30px;
-		}
 	}
-	&_left.appeared{
-		animation: left_to_right 1s ease-in-out;
+	&__title{
+		margin-top: 32px;
+		font-family: Gilroy-SemiBold;
+		font-size: 15px;
+		line-height: 28px;
+		letter-spacing: 0.5px;
+		color: @purple;
 	}
-	&_right{
+	&__header{
+		padding-right: 100px;
+		font-family: Inter;
+		font-weight: bold;
+		font-size: 42px;
+		line-height: 50px;
+		color: @blue;
+	}
+	&__button{
+		margin-top: 43px;
+		padding: 14px 30px;
+	}
+	&__pictures{
 		position: relative;
 		min-width: 470px;
 		min-height: 400px;
 	}
-	&_right.appeared{
-		animation: right_to_left 1s ease-in-out;
-	}
-//animation block start
-	&_right:hover{
-		#b_f_r_1{
-			transform: translate(-30px, 0px);
-			transition: all 800ms;
-			transition: transform ease 800ms;
-		}
-		#b_f_r_3{
-			transform: translate(-80px, 0px);
-			transition: transform ease 1s;
-		}	
-		#b_f_r_4{
-			transform: translate(0px, 20px);
-			transition: transform ease 800ms;
-		}
-	}
-//animation block finish
 }
-#b_f_r_1{
+#traffic-boost-row__img-1{
 	position: absolute;
 	top: 20px;
 	left: 50px;
 	z-index: 3;
 	transition: transform ease 800ms;
 }
-#b_f_r_2{
+#traffic-boost-row__img-2{
 	position: absolute;
     left: 140px;
     top: 0px;
 	z-index: 2;
 }
-#b_f_r_3{
+#traffic-boost-row__img-3{
 	position: absolute;
 	bottom: -60px;
     right: 180px;
 	z-index: 4;
 	transition: transform ease 1s;
 }	
-#b_f_r_4{
+#traffic-boost-row__img-4{
 	position: absolute;
 	right: 0px;
     bottom: 0px;
 	z-index: 1;
 	transition: transform ease 800ms;
 }
+//animation block start
+.traffic-boost-row__pictures:hover{
+	#traffic-boost-row__img-1{
+		transform: translate(-30px, 0px);
+		transition: transform ease 800ms;
+	}
+	#traffic-boost-row__img-3{
+		transform: translate(-80px, 0px);
+		transition: transform ease 1s;
+	}	
+	#traffic-boost-row__img-4{
+		transform: translate(0px, 20px);
+		transition: transform ease 800ms;
+	}
+}
+//animation block finish
 //adaptation start
 @media  (max-width: 1140px)  {
-	.block_four{
+	.traffic-boost-row{
 		overflow: hidden;
-		&_left{
-			&_header{
-				h3{
-					padding-right: 0px;
-				}
-			}
+		&__header{
+			padding-right: 0px;
 		}
 	}
-	#b_f_r_4{
+	#traffic-boost-row__img-4{
 		display: none;
 	}
 }
 @media  (max-width: 768px)  {
-	.block_four{
+	.traffic-boost-row{
 		grid-template-columns: 1fr;
 		margin-bottom: 120px;
-		&_right{
+		&__pictures{
 			display: none;
 		}
-		&_left{
-			h3{
-				text-align: center;
-			}
-			&_button{
-				display: grid;
-    			justify-content: center;
-			}
+		&__header{
+			text-align: center;
+		}
+		&__title{
+			text-align: center;
+		}
+		&__button-block{
+			text-align: center;
 		}
 	}
 }
