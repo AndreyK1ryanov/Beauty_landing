@@ -688,13 +688,14 @@ button{
 //block#4 finish
 
 //block#5 start
-.block_five{
+.simple-ways-row{
 	text-align: center;
     margin-bottom: 160px;
     display: grid;
     position: relative;
-    grid-template-rows: 1fr 0.7fr;
-	&_header{
+}
+.text-block{
+	&__header{
 		margin-top: 46px;
 		margin-bottom: 32px;
 		font-family: Inter;
@@ -706,18 +707,7 @@ button{
 		color: @blue;
 		padding: 0px 209px;
 	}
-	&_col{
-		display: grid;
-		grid-template-columns:  20% 20% 20%;
-		justify-content: space-around;
-		&_header{
-			will-change: transform;
-			font-size: 36px;
-			margin-bottom: 16px;
-			padding: 0px 0px;
-		}
-	}
-	&_title{
+	&__title{
 		font-family: Gilroy-SemiBold;
 		font-size: 15px;
 		line-height: 20px;
@@ -726,7 +716,37 @@ button{
 		color: @purple;
 	}
 }
-#rain3{
+.counter-block{
+	display: grid;
+	grid-template-columns:  1fr 1fr 1fr;
+	gap: 50px;
+	justify-content: space-around;
+	&__box{
+		padding: 20px;
+	}
+	&__header{
+		margin-top: 30px;
+		will-change: transform;
+		font-size: 36px;
+		margin-bottom: 16px;
+		padding: 0px 0px;
+		line-height: 42px;
+		letter-spacing: 0.33px;
+		color: @blue;
+		font-family: Inter;
+		font-style: normal;
+		font-weight: bold;
+	}
+	&__title{
+		font-family: Gilroy-SemiBold;
+		font-size: 15px;
+		line-height: 20px;
+		text-align: center;
+		letter-spacing: 0.2px;
+		color: @purple;
+	}
+}
+#simple-ways-row__img-static{
 	position: absolute;
     left: -200px;
     top: -300px;
@@ -734,44 +754,51 @@ button{
 	opacity: 0.2;
 	z-index: -1;
 }
-#move_rain3{
+#simple-ways-row__img-dinamic{
 	position: absolute;
 	opacity: 0.0;
 	z-index: -1;
 }
 //animation block - start
-#move_rain3.appeared{
+#simple-ways-row__img-dinamic.appeared{
 	animation: rain_left 4s cubic-bezier(0, 0, 0.39, 0.99) forwards;
 }
 //animation block finish
 
 //adaptation start
 @media  (max-width: 1140px)  {
-	.block_five{
+	.simple-ways-row{
 		margin-bottom: 120px;
-		h4{
+	}
+	.text-block{
+		&__header{
 			padding: 0px 50px;
 		}
 	}
 }
 @media  (max-width: 768px)  {
-	.block_five{
+	.simple-ways-row{
 		grid-template-rows: 0.7fr 1fr;
-		h4{
-			padding: 0px;
+		&__animation{
+			display: none;
 		}
-		&_col{
-			grid-template-columns: 1fr 1fr 1fr;
-    		grid-gap: 25px;
+	}
+	.text-block{
+		&__header{
+		padding: 0px;
+		}
+	}
+	.counter-block{
+		grid-template-columns: 1fr 1fr 1fr;
+    	grid-gap: 25px;
+		&__box{
+			padding: 0px;
 		}
 	}
 }
 @media  (max-width: 480px)  {
-	.block_five{
-		&_col{
-			grid-template-columns: 1fr;
-
-		}
+	.counter-block{
+		grid-template-columns: 1fr;
 	}
 }
 //adaptation finish
