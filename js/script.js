@@ -35,10 +35,10 @@ $(document).ready(function () {
     });
     //stadion
     $(function () {
-        $(document.body).on('appear', '.stadion_line', function (e, $affected) {
+        $(document.body).on('appear', '.stadion-illustration__line-img', function (e, $affected) {
             $(this).addClass("appeared");
         });
-        $('.stadion_line').appear({ force_process: true });
+        $('.stadion-illustration__line-img').appear({ force_process: true });
     })
     //block ten dot
     $(function () {

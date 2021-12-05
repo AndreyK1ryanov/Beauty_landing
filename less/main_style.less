@@ -805,13 +805,13 @@ button{
 //block#5 finish
 
 //block#6 strart
-.block_six{
+.ideia{
 	display: grid;
 	grid-template-columns: 100%;
 	justify-items: center;
 	margin-bottom: 90px;
 	grid-template-rows: 0.5fr 0.1fr 2fr;
-	h5{
+	&__header{
 		font-family: Inter;
 		font-style: normal;
 		font-weight: bold;
@@ -821,53 +821,53 @@ button{
 		color: @blue;
 		padding: 0px 100px;
 	}
-	button{
+	&__button{
 		margin-top: 46px;
 		padding: 17px 33px;
 		z-index: 2;
 	}
-	&_stadion{
-		position: relative;	
-		will-change: transform;
-	}
 }
-#stadion_svg{
+.stadion-illustration{
+	position: relative;	
+	will-change: transform;
+}
+#stadion-svg{
 	margin-top: -110px;
 	z-index: 1;
 	height: 400px;
 }
-#stadion_line_1{
+#stadion-line-1{
 	opacity: 0.0;
 	right: 260px;
     top: 70px;
 }
-#stadion_line_2{
+#stadion-line-2{
 	opacity: 0.0;
 	top: 90px;
     right: 150px;
 }
-#stadion_line_3{
+#stadion-line-3{
 	opacity: 0.0;
 	top: 80px;
-    left: 150px;
+    left: 150px-
 }
-#stadion_line_4{
+#stadion-line-4{
 	opacity: 0.0;
     top: 120px;
     right: 400px;
 }
-.stadion_line{
+.stadion-illustration__line-img{
 	position: absolute;
 }
 //animation block start
-	#stadion_line_1.appeared{
+	#stadion-line-1.appeared{
 		opacity: 1;
 		transform: translate(0px, -110px);
 		transition-property: transform, opacity;
 		transition-duration: 4s;
 		transition-timing-function: ease;
 	}
-	#stadion_line_2.appeared{
+	#stadion-line-2.appeared{
 		opacity: 1;
 		transform: translate(0px, -80px);
 		transform: translate(0px, -110px);
@@ -875,7 +875,7 @@ button{
 		transition-duration: 4s;
 		transition-timing-function: ease;
 	}
-	#stadion_line_3.appeared{
+	#stadion-line-3.appeared{
 		opacity: 1;
 		transform: translate(0px, -90px);
 		transform: translate(0px, -110px);
@@ -883,7 +883,7 @@ button{
 		transition-duration: 4s;
 		transition-timing-function: ease;
 	}
-	#stadion_line_4.appeared{
+	#stadion-line-4.appeared{
 		opacity: 1;
 		transform: translate(0px, -70px);
 		transform: translate(0px, -110px);
@@ -895,15 +895,15 @@ button{
 
 //adaptation start
 @media (max-width: 1140px) {
-	.block_six{
+	.ideia{
 		overflow: hidden;
 	}
 }
 @media  (max-width: 768px)  {
-	.block_six{
+	.ideia{
 		margin-bottom: 90px;
 		grid-template-rows: 0.5fr 0.1fr 1fr;
-		h5{
+		&__header{
 			padding: 0px;
 		}
 	}
@@ -912,111 +912,103 @@ button{
 //block#6 finish
 
 //block#7 start
-.block_seven{
+.investments-block{
 	display: grid;
 	grid-template-columns: 43% 43%;
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 130px;
-	&_left{
+	&__text{
 		position: relative;
-		h5{
-			color: @blue;
-			font-family: Inter;
-			font-style: normal;
-			font-weight: bold;
-			font-size: 42px;
-			line-height: 50px;
-			margin-bottom: 32px;
-			padding-right: 50px;
-		}
-		p{
-			color: @purple;
-			font-family: Gilroy-SemiBold;
-			font-size: 15px;
-			line-height: 28px;
-			letter-spacing: 0.5px;
-			margin-bottom: 46px;
-			padding-right: 100px;
-		}
-		button{
-			padding: 17px 30px;
-		}
 	}
-	&_left.appeared{
-		animation: left_to_right 1s ease-in-out;
-		will-change: transform;
+	&__header{
+		color: @blue;
+		font-family: Inter;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 42px;
+		line-height: 50px;
+		margin-bottom: 32px;
+		padding-right: 50px;
 	}
-	&_right{
+	&__title{
+		color: @purple;
+		font-family: Gilroy-SemiBold;
+		font-size: 15px;
+		line-height: 28px;
+		letter-spacing: 0.5px;
+		margin-bottom: 46px;
+		padding-right: 100px;
+	}
+	&__button{
+		padding: 17px 30px;
+	}
+	&__pictures{
 		position: relative;
     	min-height: 500px;
 	}
-	&_right.appeared{
-		animation: right_to_left 1s ease-in-out;
-		will-change: transform;
-	}
 //animation block start
-	&_right:hover{
-		#cart_detail_2{
+	&__pictures:hover{
+		#cart-detail-2{
 			transform: translate(0px, -50px);
 			transition: transform ease 800ms;
 		}	
-		#cart_detail_3{
+		#cart-detail-3{
 			transform: translate(0px, 50px);
 			transition: transform ease 800ms;
 		}
 	}
 //animation block finish
 }
-#cart_detail_1{
+#cart-detail-1{
 	position: absolute;
     z-index: 3;
 	top: 40px;
     left: 90px;
 }
-#cart_detail_2{
+#cart-detail-2{
 	position: absolute;
     z-index: 4;
     top: 150px;
     left: 25px;
 	transition: transform ease 800ms;
 }
-#cart_detail_3{
+#cart-detail-3{
 	position: absolute;
     z-index: 2;
 	bottom: 150px;
     right: 0px;
 	transition: transform ease 800ms;
 }
-#cart_detail_4{
+#cart-detail-4{
     position: absolute;
 	top: 20px;
     z-index: 1;
 }
 //adaptation start
 @media  (max-width: 1140px)  {
-	.block_seven{
+	.investments-block{
 		overflow: hidden;
 	}
-	#cart_detail_3{
+	#cart-detail-3{
 		display: none;
 	}
 }
 @media  (max-width: 768px)  {
-	.block_seven{
+	.investments-block{
 		margin-bottom: 120px;
 		grid-template-columns: 1fr;
-		&_right{
+		&__pictures{
 			display: none;
 		}
-		&_left{
-			text-align: center;
-			h5{
-				padding: 0px;
-			}
-			p{
-				padding: 0px;
-			}
+		&__text{
+			text-align: center
+		}
+		&__header{
+			padding: 0px;
+		}
+		&__title{
+			padding: 0px;
 		}
 	}
 }
@@ -1024,118 +1016,107 @@ button{
 //block#7 finish
 
 //block#8 start
-.block_eight{
+.servis{
 	display: grid;
 	grid-template-columns: 43% 43%;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 130px;
 	position: relative;
-	&_left{
+	&__pictures{
 		position: relative;
 		min-height: 425px;
 	}
-	&_left.appeared{
-		will-change: transform;
-		animation: left_to_right 1s ease-in-out;
-	}
-	&_left:hover{
-		#meeting_detail_1{
+	&__pictures:hover{
+		#meeting-detail-1{
 			transform: rotateZ(270deg) translate(0px, 0px);
 			transition: transform ease 1.5s;
 		}
-		#meeting_detail_2{
+		#meeting-detail-2{
 			transform: translate(0px, 50px);
 			transition: transform ease 800ms;
 		}
-		#meeting_detail_3{
+		#meeting-detail-3{
 			transform: translate(-30px, 0px);
 			transition: transform ease 800ms;
 		}
 	}
-	#meeting_detail_1{
+	#meeting-detail-1{
 		position: absolute;
 		z-index: 3;
 		bottom: 50px;
 		left: -120px;
 		transition: transform ease 800ms;
 	}
-	#meeting_detail_2{
+	#meeting-detail-2{
 		position: absolute;
 		z-index: 3;
 		bottom: 180px;
 		right: 50px;
 		transition: transform ease 800ms;
 	}
-	#meeting_detail_3{
+	#meeting-detail-3{
 		position: absolute;
 		z-index: 3;
 		top: -40px;
     	left: -50px;
 		transition: transform ease 800ms;
 	}
-	#meeting_detail_4{
+	#meeting-detail-4{
 		position: absolute;
 		z-index: 4;
 	}
-	&_right{
+	&__text{
 		position: relative;
 		z-index: 2;
-		&_header{
-			h6{
-				font-family: Inter;
-				font-style: normal;
-				font-weight: bold;
-				font-size: 26px;
-				color: @blue;
-				letter-spacing: 0.325px;
-				margin-bottom: 32px;
-			}
-			p{
-				font-family: Gilroy-SemiBold;
-				font-size: 15px;
-				line-height: 20px;
-				letter-spacing: 0.2px;
-				color: @purple;
-				margin-bottom: 48px;
-			}
-		}
 		display: inherit;
-		grid-template-rows: 50% 50%;
-		&_col{
-			display: inherit;
-			grid-template-columns: 45% 45%;
-			justify-content: space-between;
-			img{
-				height: 36px;
-				width: 36px;
-			}
-			&_head{
-				font-family: Inter;
-				font-style: normal;
-				font-weight: bold;
-				font-size: 15px;
-				line-height: 18px;
-				letter-spacing: 0.2px;
-				color: @blue;
-				margin-top: 16px;
-				margin-bottom: 8px;
-			}
-			&_title{
-				font-family: Gilroy-SemiBold;
-				font-size: 15px;
-				line-height: 20px;
-				letter-spacing: 0.2px;
-				color: @purple;
-			}
-		}
 	}
-	&_right.appeared{
-		will-change: transform;
-		animation: right_to_left 1s ease-in-out;
+	&__header{
+		font-family: Inter;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 26px;
+		color: @blue;
+		letter-spacing: 0.325px;
+		margin-bottom: 32px;
+	}
+	&__title{
+		font-family: Gilroy-SemiBold;
+		font-size: 15px;
+		line-height: 20px;
+		letter-spacing: 0.2px;
+		color: @purple;
+		margin-bottom: 48px;
 	}
 }
-#rain4{
+.icon-block{
+	display: inherit;
+	grid-template-columns: 45% 45%;
+	justify-content: space-between;
+	&__img{
+		height: 36px;
+		width: 36px;
+	}
+	&__header{
+		font-family: Inter;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 18px;
+		letter-spacing: 0.2px;
+		color: @blue;
+		margin-top: 16px;
+		margin-bottom: 8px;
+	}
+	&__title{
+		font-family: Gilroy-SemiBold;
+		font-size: 15px;
+		line-height: 20px;
+		letter-spacing: 0.2px;
+		color: @purple;
+	}
+}
+#servis-rain{
 	position: absolute;
     z-index: 1;
     right: -370px;
@@ -1144,13 +1125,13 @@ button{
 }
 //adaptation start
 @media  (max-width: 1140px)  {
-	.block_eight{
+	.servis{
 		grid-template-columns: 1fr;
 		overflow: hidden;
-		&_left{
+		&__pictures{
 			display: none;
 		}
-		&_right{
+		&__text{
 			text-align: center;
 			display: inherit;
 			grid-template-rows: 1fr 1fr;
@@ -1158,7 +1139,7 @@ button{
 	}
 }
 @media  (max-width: 768px)  {
-	.block_eight{
+	.servis{
 		margin-bottom: 20px;
 	}
 }
