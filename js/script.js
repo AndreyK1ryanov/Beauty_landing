@@ -28,10 +28,10 @@ $(document).ready(function () {
     //atach class "appeared" for animation when user scroll -start
     //left rain
     $(function () {
-        $(document.body).on('appear', '#simple-ways-row__img-dinamic', function (e, $affected) {
+        $(document.body).on('appear', '#simple-ways-row__img-dynamic', function (e, $affected) {
             $(this).addClass("appeared");
         });
-        $('#simple-ways-row__img-dinamic').appear({ force_process: true });
+        $('#simple-ways-row__img-dynamic').appear({ force_process: true });
     });
     //stadion
     $(function () {
