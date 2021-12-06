@@ -1,7 +1,7 @@
 $(document).ready(function () {
     //mobile menu - start
     $('.mobile-button-open').on("tap click", function () {
-        $('.nav-menu').addClass('mobile-nav-menu');
+        $('.nav-menu__body').addClass('mobile-nav-menu__body');
         $('.nav-menu__list-item').addClass('mobile-nav-menu__list-item');
         $('.nav-menu__item').addClass('mobile-nav-menu__item');
         $('.sign-button-block').addClass('mobile-sign-button-block');
@@ -79,6 +79,6 @@ $(document).ready(function () {
 });
 
 
-/*  Coded by Andrey Kiryanov on 05/19/2021
-    "https://github.com/AndreyK1ryanov/progressive-landing-page/"
+/*
+Coded by Andrey Kiryanov on 19/06/2021
 */
