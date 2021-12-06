@@ -44,36 +44,30 @@ body{
 .another-color-word{
 	color: @orange;
 }
-h1, h2, h3, h4, h5, h6 {
+.header {
     font-family: 'Inter';
 }
 @media  (max-width: 768px)  {
-	h1, h2, h3, h4, h5, h6 {
+	.header {
 		font-size: 37px !important;
 	}
 	.container{
 		padding: 0px 10px;
 	}
 }
-button{
+.orange-button{
 	outline: none;
 	cursor: pointer;
-	border-radius: 3px;
-	border-style: solid;
-    font-family: Rubik;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 12px;
-	line-height: 20px;
-	text-align: center;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-}
-.orange-button{
 	background-color: @orange;
 	border-radius: 3px;
 	color: @white;
 	border-color: @orange;
+	font-family: Rubik;
+	border-style: solid;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 	transition-property: box-shadow;
 	transition-duration: 0.2s;
 }
@@ -81,6 +75,14 @@ button{
 	box-shadow: 0px 0px 20.6483px rgba(242, 153, 74, 20);
 }
 .dark-button{
+	outline: none;
+	cursor: pointer;
+	border-style: solid;
+    font-family: Rubik;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 	background: none;
 	border-radius: 3px;
 	color: @orange;
@@ -356,9 +358,8 @@ button{
 		font-size: 14px;
 	}
 }
-//popup_in finish
 
-//block#1 start
+
 .promo{
 		display: grid;
 		grid-template-columns: 50% 50%;
@@ -392,6 +393,7 @@ button{
 	display: grid;
 	grid-template-columns: 35% 65%;
 	&__play-button{
+		cursor: pointer;
 		text-align: center;
 		font-size: 48px;
 		background-color: #462579;
@@ -1312,7 +1314,7 @@ button{
 //block#10 start
 .footer{
 	display: grid;
-	grid-template-rows: 1fr 2fr 1fr;
+	grid-template-rows: 0fr 2fr 1fr;
 	position: relative;
 	overflow: hidden;
 	&__background{
@@ -1349,6 +1351,8 @@ button{
 		line-height: 20px;
 		letter-spacing: 0.2px;
 		color: @white;
+		transition-property: color;
+		transition-duration: 0.1s;
 	}
 	&__link:hover{
 		color: @orange;
@@ -1434,25 +1438,26 @@ button{
 		grid-gap: 10px;
 	}
 	&__icon{
-		width: 40px;
-		height: 40px;
-		letter-spacing: 0px;
-		text-align: center;
-		font-size: 12px;
+		text-decoration: none;
+		padding: 15px 15px;
+		font-size: 15px;
 		color: @white;
 		background-color: #f6f6f61f;
 		border-radius: 50%;
 		border-width: 0px;
+		cursor: pointer;
+		transition-property: color;
+		transition-duration: 0.1s;
 	}
 	&__icon:hover{
 		color:@orange;
-		font-size: 17px;
 	}
 }
 .copyright-block{
 	margin-top: 120px;
 	display: grid;
-	grid-template-columns: 15% 15% 15%;
+	grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
 	justify-content: center;
 	text-align: center;
 	z-index: 2;
@@ -1479,9 +1484,6 @@ button{
 		grid-gap: 30px;
 		justify-content: space-around;
 	}
-	.copyright-block{
-		grid-template-columns: 30% 30% 30%;
-	}
 }
 @media  (max-width: 768px)  {
 	.footer{
@@ -1493,11 +1495,6 @@ button{
 		}
 		&__list-item{
 			justify-items: center;
-		}
-		&_footer{
-			margin-top: 80px;
-			grid-template-columns: 1fr;
-    		grid-template-rows: 2fr 2fr 1fr;
 		}
 	}
 }

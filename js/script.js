@@ -21,8 +21,6 @@ $(document).ready(function () {
     $('.mobile-button-close').on("tap click", closeMobileMenu)
 
     $('.nav-menu__link').on("tab click", closeMobileMenu)
-
-
     //mobile meu - finish
 
     //atach class "appeared" for animation when user scroll -start
@@ -76,6 +74,42 @@ $(document).ready(function () {
         $('html').removeClass('no-scroll');
     });
     //pop up login in form finish
+
+    //gap for button - start
+    $('.identification-form__button').on('click', function () {
+        alert('Благодарю за нажатие, доброго времени суток.))')
+    })
+    $('.promo__button').on('click', function () {
+        alert('Благодарю за нажатие, доброго времени суток.))')
+    })
+    $('.preview__play-button').on('click', function () {
+        alert('Благодарю за нажатие, доброго времени суток.))')
+    })
+    $('.preview__open-button').on('click', function () {
+        alert('Благодарю за нажатие, доброго времени суток.))')
+    })
+    $('.traffic-boost-row__button').on('click', function () {
+        alert('Благодарю за нажатие, доброго времени суток.))')
+    })
+    $('.ideia__button').on('click', function () {
+        alert('Благодарю за нажатие, доброго времени суток.))')
+    })
+    $('.investments-block__button').on('click', function () {
+        alert('Благодарю за нажатие, доброго времени суток.))')
+    })
+    $('.subscribe-form__button').on('click', function () {
+        alert('Благодарю за нажатие, доброго времени суток.))')
+    })
+    $('.footer__link').on('click', function () {
+        alert('Благодарю за нажатие, доброго времени суток.))')
+    })
+    $('.copyright-block__policy').on('click', function () {
+        alert('Благодарю за нажатие, доброго времени суток.))')
+    })
+    $('.copyright-block__service').on('click', function () {
+        alert('Благодарю за нажатие, доброго времени суток.))')
+    })
+    //gap for button - finish
 });
 
 
