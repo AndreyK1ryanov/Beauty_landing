@@ -6,10 +6,10 @@ RU /
 Так же тут я впервые опробовал CSS анимации. 
 
 
-При создании использовались: 
-LESS - в качестве CSS препроцессора 
-jQuery - для упрощения работы с JS 
-BEM - методология 
+#При создании использовались: 
+#LESS - в качестве CSS препроцессора 
+#jQuery - для упрощения работы с JS 
+#BEM - методология 
 
 Верстка полностью валидна, поддерживает все популярные браузеры и платформы. 
 
@@ -20,9 +20,9 @@ The impetus for creating this project was my study of the BEM methodology, this 
 A free template is taken as a basis (you can find it in the source folder), alas, the template has a design only for large displays, I made a mobile one myself.
 This is also where I tried out CSS animations for the first time.
 
-When creating were used:
-LESS - as a CSS preprocessor
-jQuery - to make it easier to work with JS
-BEM - methodology
+#When creating were used:
+#LESS - as a CSS preprocessor
+#jQuery - to make it easier to work with JS
+#BEM - methodology
 
 The layout is fully valid, supports all popular browsers and platforms.
