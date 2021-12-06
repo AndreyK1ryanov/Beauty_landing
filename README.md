@@ -21,8 +21,8 @@ A free template is taken as a basis (you can find it in the source folder), alas
 This is also where I tried out CSS animations for the first time.
 
 When creating were used:
-LESS - as a CSS preprocessor
-jQuery - to make it easier to work with JS
-BEM - methodology
+* LESS - as a CSS preprocessor
+* jQuery - to make it easier to work with JS
+* BEM - methodology
 
 The layout is fully valid, supports all popular browsers and platforms.
